@@ -8,8 +8,8 @@ const getUserDetails = async (req) => {
 
   const findQuery = {};
   if (id) findQuery.id = id;
-  if (id) findQuery.name = name;
-  if (id) findQuery.lastname = lastname;
+  if (name) findQuery.name = name;
+  if (lastname) findQuery.lastname = lastname;
 
   // you can use "throwError" function to throw error if any validating fails
   //
